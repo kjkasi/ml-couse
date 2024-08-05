@@ -2,8 +2,8 @@ version: '3.4'
 
 services:
   ml-course:
-    container_name: conda
-    image: conda:latest
+    container_name: ml-course
+    image: ml-course:latest
     build:
       context: .
       dockerfile: Dockerfile
