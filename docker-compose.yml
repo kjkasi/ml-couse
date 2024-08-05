@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  ml-course:
+    container_name: conda
+    image: conda:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    # volumes:
+      # - ./course:/course
