@@ -11,7 +11,7 @@ RUN set -eux \
 && conda install -n base -c conda-forge -y conda-libmamba-solver \
 && conda config --set solver libmamba \
 \
-&& conda install -n base -c conda-forge -y scipy pandas matplotlib seaborn numpy notebook ipywidgets jupyter_contrib_nbextensions \
+&& conda install -n base -c conda-forge -y scipy pandas matplotlib seaborn numpy notebook ipywidgets jupyter_contrib_nbextensions scikit-learn \
 && jupyter nbextension enable --py widgetsnbextension
 # && conda install -n base -c conda-forge -y numpy \
 # && conda install -n base -c conda-forge -y pandas \
